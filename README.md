@@ -31,12 +31,19 @@ commodity and delivery tax factors by municipality. These are published
 documents, not a documented public JSON tax API.
 
 [New York Publication 718-R](https://www.tax.ny.gov/forms/publications/st/pub718r.htm)
-identifies residential energy sales taxes and exemptions. Automatic tax support
-starts with the City of Syracuse; other municipalities require their own verified
-tax treatment. Ordinary retail sales-tax rates must not be substituted for
-residential electricity tax rates.
+identifies residential energy sales taxes and exemptions. Planned automatic tax
+support covers National Grid's upstate New York electric territory, using a
+one-time selection of the applicable municipality and residential energy sales-tax
+jurisdiction. The percentages then update from official sources. A ZIP code alone
+does not reliably identify city, village, county, or school-district boundaries.
+Ordinary retail sales-tax rates must not be substituted for residential electricity
+tax rates. See [the tax design](docs/tax-design.md).
 
-Initial scope: standard residential SC-1, Load Zone C / Central, City of Syracuse.
+Target scope: standard residential SC-1 throughout National Grid's upstate New York
+electric territory, with configurable load zone and tax jurisdiction. The local
+prototype has been checked for Zone C / Central and City of Syracuse; statewide
+jurisdiction support remains to be implemented and verified.
+
 Prices are estimates for cost tracking; account-specific credits, alternate
 suppliers, time-of-use plans and the final utility bill can differ.
 
