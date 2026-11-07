@@ -1,0 +1,43 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '10:00'
+      timezone: America/New_York
+    cooldown:
+      default-days: 3
+    open-pull-requests-limit: 5
+    labels: [dependencies]
+    commit-message:
+      prefix: 'build(deps)'
+    groups:
+      runtime:
+        patterns: [beautifulsoup4, pypdf]
+        update-types: [minor, patch]
+      development:
+        patterns: ['*']
+        exclude-patterns: [beautifulsoup4, pypdf]
+        update-types: [minor, patch]
+      security:
+        applies-to: security-updates
+        patterns: ['*']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '10:00'
+      timezone: America/New_York
+    cooldown:
+      default-days: 3
+    open-pull-requests-limit: 5
+    labels: [dependencies, github-actions]
+    commit-message:
+      prefix: 'ci(deps)'
+    groups:
+      actions:
+        patterns: ['*']
+        update-types: [minor, patch]
