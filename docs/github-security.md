@@ -48,7 +48,7 @@ To verify a downloaded artifact from a release produced by this workflow:
 
 ```sh
 gh attestation verify national_grid_ny_rates.zip \
-  --repo DEADSEC-SECURITY/hacs-national-grid-ny-rates
+  --repo DEADSEC-SECURITY/national-grid-ny-rates
 sha256sum --check SHA256SUMS
 ```
 

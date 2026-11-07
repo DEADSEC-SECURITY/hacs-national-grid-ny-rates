@@ -3,7 +3,7 @@
 Security fixes target the latest released version. Update to that version before
 reporting a problem.
 
-Use [Report a vulnerability](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/security/advisories/new)
+Use [Report a vulnerability](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/security/advisories/new)
 for a confidential report. Do not open a public issue containing a vulnerability,
 credential, account number, bill, precise address or private Home Assistant data.
 Describe the affected version, impact and a minimal reproduction with synthetic

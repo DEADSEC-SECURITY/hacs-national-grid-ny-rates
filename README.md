@@ -1,8 +1,8 @@
 # National Grid NY Rates
 
-[![Tests](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/tests.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/tests.yml)
-[![Integration validation](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/validate.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/validate.yml)
-[![Dependency audit](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/security-audit.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/security-audit.yml)
+[![Tests](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/tests.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/tests.yml)
+[![Integration validation](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/validate.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/validate.yml)
+[![Dependency audit](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/security-audit.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/national-grid-ny-rates/actions/workflows/security-audit.yml)
 
 An unofficial Home Assistant integration for **National Grid / Niagara Mohawk
 standard residential SC-1 electricity in upstate New York**. Retrieves published
@@ -12,6 +12,7 @@ account, invoice upload or API key.
 The 0.1.x releases are available through a HACS custom repository.
 It is not affiliated with National Grid, New York State, Home Assistant or HACS,
 and is not listed in the default HACS catalog.
+[Catalog submission #13634](https://github.com/hacs/default/pull/13634) is pending review.
 
 ## Five entities
 
@@ -72,7 +73,7 @@ Requires Home Assistant **2026.10 or newer**. Tested locally on Core 2026.10.4
 with Python 3.14. Supports Home Assistant OS with no shell commands or add-ons.
 
 1. In HACS, open the menu → **Custom repositories**.
-2. Add https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates with type **Integration**.
+2. Add https://github.com/DEADSEC-SECURITY/national-grid-ny-rates with type **Integration**.
 3. Download **National Grid NY Rates** and restart Home Assistant.
 4. Go to **Settings → Devices & services → Add integration** and select **National Grid NY Rates**.
 5. Select the load zone and tax jurisdictions.
