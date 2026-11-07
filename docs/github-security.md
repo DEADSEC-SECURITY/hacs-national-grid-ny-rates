@@ -7,6 +7,7 @@ Workflow artifacts expire after seven days to limit storage use.
 ## Repository settings
 
 - Dependabot vulnerability alerts and security-fix PRs.
+- GitHub's dependency malware alerts.
 - Weekly Python and Actions version-update PRs, grouped by purpose, with a
   three-day cooldown for normal updates. Security updates are not delayed.
 - Dependency graph and SPDX SBOM export.

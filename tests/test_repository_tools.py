@@ -21,6 +21,16 @@ def test_runtime_pin_drift_requires_explicit_sync(tmp_path):
     assert json.loads(manifest.read_text())["requirements"] == ["pypdf==6.13.3"]
 
 
+def test_home_assistant_shared_dependency_uses_minimum_version(tmp_path):
+    requirements = tmp_path / "requirements.txt"
+    manifest = tmp_path / "manifest.json"
+    requirements.write_text("beautifulsoup4==4.15.0\npypdf==6.21.4\n")
+    manifest.write_text(json.dumps({"requirements": ["beautifulsoup4==4.15.0", "pypdf==6.21.4"]}))
+    check_pins(requirements, manifest, sync=True)
+    assert json.loads(manifest.read_text())["requirements"] == ["beautifulsoup4>=4.15.0", "pypdf==6.21.4"]
+    check_pins(requirements, manifest)
+
+
 @pytest.mark.parametrize(
     "value", ["pypdf>=6", "-r private.txt", "package @ https://example.org/code", "pypdf==6\npypdf==7"]
 )

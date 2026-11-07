@@ -28,13 +28,16 @@ def runtime_pins(path: Path) -> list[str]:
 
 def check_pins(requirements: Path, manifest: Path, sync: bool = False) -> None:
     pins = runtime_pins(requirements)
+    # HA owns this shared dependency's version. Hassfest requires a minimum
+    # instead of an exact manifest pin; tests/audits keep a fixed baseline.
+    expected = [pin.replace("==", ">=", 1) if pin.startswith("beautifulsoup4==") else pin for pin in pins]
     data = json.loads(manifest.read_text())
-    if data["requirements"] != pins:
+    if data["requirements"] != expected:
         if not sync:
             raise ValueError(
                 "Runtime pins differ from the HA manifest; review the update, then run tools/check_repository.py --sync-runtime"
             )
-        data["requirements"] = pins
+        data["requirements"] = expected
         manifest.write_text(json.dumps(data, indent=2) + "\n")
 
 

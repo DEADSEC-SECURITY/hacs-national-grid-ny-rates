@@ -39,6 +39,11 @@ This copies the reviewed runtime pins into the HA manifest. Commit that change
 to the dependency PR, then rerun checks. CI checks both files and blocks a merge
 while they disagree. The sync command never installs or executes a package.
 
+Beautiful Soup is also a Home Assistant dependency. Its manifest requirement is
+a minimum version, as required by Hassfest; requirements.txt pins the matching
+tested/audited baseline. The sync tool preserves this distinction. Other runtime
+requirements retain exact manifest pins.
+
 ## Releases
 
 Update the manifest version in a reviewed PR, merge it, then push the matching
