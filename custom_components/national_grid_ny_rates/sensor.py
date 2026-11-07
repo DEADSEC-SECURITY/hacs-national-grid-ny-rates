@@ -45,7 +45,7 @@ class NationalGridRateSensor(CoordinatorEntity[NationalGridCoordinator], SensorE
             manufacturer="National Grid / Niagara Mohawk",
             model="SC-1 residential electricity tariff",
             entry_type=DeviceEntryType.SERVICE,
-            configuration_url="https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates",
+            configuration_url="https://github.com/DEADSEC-SECURITY/national-grid-ny-rates",
         )
 
     @property
