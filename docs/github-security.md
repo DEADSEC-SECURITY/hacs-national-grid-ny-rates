@@ -34,8 +34,8 @@ packages and their dependencies; dependency review blocks newly introduced high
 or critical vulnerabilities in PRs.
 
 Hassfest checks Home Assistant integration conventions. HACS checks repository
-compatibility, excluding only the brand-catalog requirement for this custom
-repository. All workflows use ordinary pull_request events with read-only tokens;
+compatibility, including bundled brand assets, with no checks disabled.
+All workflows use ordinary pull_request events with read-only tokens;
 none runs untrusted PR code in a privileged pull_request_target workflow.
 
 The release workflow verifies the tag against the integration's manifest version,

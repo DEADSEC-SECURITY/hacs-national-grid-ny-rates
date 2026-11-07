@@ -30,6 +30,3 @@ jobs:
         with:
           category: integration
           comment: 'false'
-          # The integration is a custom repository, with no default-catalog
-          # brand submission. This does not skip any security checks.
-          ignore: brands
