@@ -1,0 +1,31 @@
+name: Bug report
+description: Report an installation, source retrieval, rate or tax calculation problem.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach utility bills, account numbers, access tokens, addresses or unredacted diagnostics.
+  - type: input
+    id: versions
+    attributes:
+      label: Integration and Home Assistant versions
+      placeholder: Integration 0.1.0, Home Assistant 2026.11.0
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public source links and redacted error messages
+      description: For rate discrepancies, give the load zone, municipality, public tariff link and effective date. Do not post a bill.

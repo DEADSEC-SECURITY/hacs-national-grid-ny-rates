@@ -1,11 +1,15 @@
 # National Grid NY Rates
 
+[![Tests](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/tests.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/tests.yml)
+[![Integration validation](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/validate.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/validate.yml)
+[![Dependency audit](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/security-audit.yml/badge.svg)](https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/actions/workflows/security-audit.yml)
+
 An unofficial Home Assistant integration for **National Grid / Niagara Mohawk
 standard residential SC-1 electricity in upstate New York**. Retrieves published
 supply, delivery adjustments and location-specific taxes without a National Grid
 account, invoice upload or API key.
 
-Version 0.1.0 is an initial release for testing through a HACS custom repository.
+The 0.1.x releases are available through a HACS custom repository.
 It is not affiliated with National Grid, New York State, Home Assistant or HACS,
 and is not listed in the default HACS catalog.
 
@@ -136,3 +140,16 @@ test fixtures under `tests/fixtures/public/`.
 
 See the [local validation record](docs/local-validation.md) for the live result,
 test environment and coverage.
+
+## Security and maintenance
+
+Dependabot opens Python and GitHub Actions update PRs. CodeQL scans Python and
+workflow code, while dependency review and vulnerability audits check dependency
+changes. Secret scanning and push protection help prevent credential leaks.
+See [SECURITY.md](SECURITY.md) for confidential reports and
+[CONTRIBUTING.md](CONTRIBUTING.md) for checks, dependency updates and releases.
+
+New releases are built and tested in GitHub Actions, with a reproducible install
+ZIP, SHA256 checksums, an SPDX software bill of materials and a GitHub provenance
+attestation. Published releases are immutable. These use standard GitHub-hosted
+runners and free features for this public repository.
