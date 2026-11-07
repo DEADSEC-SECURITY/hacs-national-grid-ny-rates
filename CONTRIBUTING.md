@@ -56,6 +56,8 @@ Running the Release workflow manually on main tests packaging and attestation
 without publishing a release. Private bills, development caches and test fixtures
 are excluded from the install ZIP.
 
-HACS validation checks the custom repository; the brands check is omitted because
-this project has not submitted a brand to the default HACS catalog. Hassfest and
-all other HACS checks still run. This is not an application for catalog inclusion.
+HACS validation runs every check, including brands, with no ignores. The integration
+bundles its original icon in `custom_components/national_grid_ny_rates/brand/`, as
+supported by Home Assistant 2026.3 and newer. The source artwork is in
+`docs/assets/icon.svg` and is covered by the repository's MIT license. It does not
+use National Grid or Home Assistant brand artwork.

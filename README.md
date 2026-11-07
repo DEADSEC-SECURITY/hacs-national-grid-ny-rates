@@ -66,7 +66,7 @@ document layout makes the sensors unavailable. A partial price with missing taxe
 is never presented as the complete price. Home Assistant retries failed setup;
 existing entries retry on refresh. Future effective dates are not applied early.
 
-## Install when ready
+## Installation
 
 Requires Home Assistant **2026.10 or newer**. Tested locally on Core 2026.10.4
 with Python 3.14. Supports Home Assistant OS with no shell commands or add-ons.
