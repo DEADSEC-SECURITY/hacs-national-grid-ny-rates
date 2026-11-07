@@ -63,3 +63,12 @@ The integration publishes current tariff rates. It does not reconstruct
 historical meter-reading bills or allocate the monthly fixed charge across usage.
 Any comparison using private customer records stays local and is excluded from
 this repository and its release assets.
+
+## Security follow-up for version 0.1.1
+
+After enabling GitHub security scans, the PDF parser was updated to pypdf 6.21.4
+to address the detected advisories. The current runtime dependency audit reports
+no known vulnerabilities. All 72 local tests pass with 92% integration coverage;
+the rate and tax calculation tests still reproduce the values above. This adds
+repository security, dependency-baseline and reproducible-package checks without
+changing the rate formulas or sensor configuration.

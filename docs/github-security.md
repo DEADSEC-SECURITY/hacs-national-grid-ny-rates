@@ -14,6 +14,8 @@ Workflow artifacts expire after seven days to limit storage use.
 - CodeQL default setup with the extended query suite for Python and Actions,
   scanning changes and running periodically.
 - Secret scanning and push protection for recognized credentials.
+- Copilot Autofix suggestions are available with CodeQL. Credit-consuming AI
+  Scan and agentic-autofix features are left disabled.
 - Private vulnerability reporting through GitHub security advisories.
 - Read-only default workflow tokens; workflows cannot approve PR reviews.
 - External Actions pinned to full commit SHAs, enforced by GitHub and local CI.
