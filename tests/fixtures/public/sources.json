@@ -1,0 +1,67 @@
+{
+  "retrieved": "2026-11-07",
+  "note": "Only public official filings. Leaves detail HTML reduced to the residential base tariff row. Base PDF is the single official leaf 349 extracted from the full tariff. No customer bills.",
+  "files": {
+    "sc.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5FZ%5B%2C%22LKK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "33b9c6fa5f08b7fa3c3132c922496bae93a747b9abfa583b8461219dc6420f3b"
+    },
+    "ods.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5FZ%5B%2C%20%5C%23K4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "6c6a36184ab5404ee7dd1513a91dde885d0f4256dda0d6b8402dad4da9915fe7"
+    },
+    "rdm.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5FJ%3F%29%21%3C%5BK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "b4c0e84198077e6675fe1a0cc311633baa8c8875b858f0fd7f5ee99f9cdc96e9"
+    },
+    "tras.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5FZ%5B%2D%20%5CCK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "70357b61bae2f95c224ff7761fc6c6bae1475030ee8147756605ada1e6baa8ce"
+    },
+    "mfc.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5F%3A%3F%2F%22L%5BK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "47861648d290ba620064158302ccef8f096639f4ddc244e966b925135d842867"
+    },
+    "cess.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5F%3A%3B%26%20%2CKK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "4a3aaa08f906b0d33270ed50febff7e0a6faada7cb8b9cb41af7b729c46efc58"
+    },
+    "sbc.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5F%2A%3F%2B%21L%23K4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "3464ec8f52191d74c2cd75dfcfddaa1976bc27124c3ece18e73d0e6fcdeaf78b"
+    },
+    "cesd.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5F%2A%3B%29%21%3C%23K4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "261db01f3e7944777aaf4901bec4166c424d03610eee9c7fff470c5ba6150612"
+    },
+    "nup.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%27%5D%2AC%27%20%3C%5BK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "af3cf8665c91f3cdc8b6e452fb5858df2475969804f05254eb191f9266e5a324"
+    },
+    "rts.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%26%5FJS%26%21%2C%23K4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "9feb48d34a2bd50f9bdb828c223d68d7eb67391d016f0b188a92378bb703dde5"
+    },
+    "isas.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%21%5F%3A%5B%2D%21%3CKK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "7552e0526916a3bc5cd818be0f1a6e8b83e353324a9702e84f2e79a132050bed"
+    },
+    "cac.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBS%2A%5E%2A%3B%2A%21LKK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "ee2987dfb7214c5fdd8e4763a9aefb5746427f0a47b08cff8a62f5c31b45ee62"
+    },
+    "mun.pdf": {
+      "url": "https://ets.dps.ny.gov/ets_web/search/showPDF.cfm?G%3E%29S2%3DJ9JSBW%27%5D%3AW%26%20%3CKK4%3FXVAHQQ%3AW%2FLJ%5B%5E%3AICSBNKB%5FC%2A69NBFZ%0A",
+      "sha256": "5addbd0e4c7c708d80b5a1654cc56734f96d32f0379edb95b9e35915749f4f29"
+    },
+    "base.pdf": {
+      "source": "Leaf 349, revision 27, extracted from the official effective PSC 220 tariff",
+      "effective": "2026-04-01",
+      "sha256": "7b95c86e74d3cd1b07ee57acec80745ff254b1c7ada85bb53799e50c21160e25"
+    },
+    "rts5.pdf": {
+      "url": "https://www.nationalgridus.com/media/pdfs/billing-payments/electric-rates/upstate-ny/staterts5.pdf",
+      "sha256": "20d4544ec8495ccdc84c09dcf3d6503d82993ed19369eb1ce85ee85fb2c6ad42"
+    }
+  }
+}

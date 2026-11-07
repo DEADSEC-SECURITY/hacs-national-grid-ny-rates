@@ -1,7 +1,8 @@
 # Automatic residential electricity tax
 
-This document records the intended implementation. It does not claim the
-integration or statewide tax lookup has already been implemented.
+This document describes the tax lookup and calculation implemented in version
+0.1.0. Jurisdictions are selected during setup; percentages come from current
+official documents.
 
 ## Coverage
 
@@ -47,16 +48,24 @@ explicitly authorized location-lookup flow.
 
 - Apply the RTS commodity factor to applicable supply charges and the RTS
   delivery factor to applicable delivery charges.
-- Calculate residential sales tax using the matched Part 1 jurisdiction and
-  the official taxable-base rules. Verify the treatment of revenue-tax
-  surcharges before asserting statewide calculation accuracy.
+- Apply the selected Part 1 sales-tax percentage to supply and delivery
+  charges **including** their revenue-tax surcharges. New York's
+  [Tax Bulletin ST-860](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/taxable_receipt.htm)
+  explains that taxable receipts include the total charge for taxable services.
+  Its excise-tax discussion includes seller-imposed taxes in receipts.
+  [TSB-A-98(58)S](https://www.tax.ny.gov/pdf/advisory_opinions/sales/a98_58s.pdf)
+  discusses electricity, transportation and surcharges as taxable electric-service
+  receipts in a submetering case.
+- Total including tax =
+  `(supply × (1 + supply RTS) + delivery × (1 + delivery RTS)) × (1 + sales tax)`.
+  Tax per kWh is that amount minus the before-tax supply and delivery sum.
 - Respect the publication's combined jurisdiction rates: for example, a
   school-district row can already include county tax. Do not blindly add that
   row to the county rate again.
 - Treat an unlisted locality as exempt only after establishing that no listed
   city or school-district exception applies. Missing or unparsed data is not
   evidence of a zero rate.
-- Respect effective dates and temporary exemptions. Check rates daily and
+- Respect effective dates and temporary exemptions. Check rates every six hours and
   apply new rates when effective, not when first announced.
 - Keep monthly fixed charges and their taxes separate from per-kWh rates.
 
@@ -72,20 +81,25 @@ All five primary entities report **USD/kWh**:
 | Tax | Applicable revenue-tax surcharges and residential sales tax per kWh |
 | Total including tax | Total before tax plus tax; suitable for the Energy dashboard's current-price entity |
 
-Expose fixed monthly service charges separately. Include tax source URLs,
+Expose fixed monthly service charges separately in attributes. Include tax source URLs,
 effective dates, jurisdiction names, component percentages and last successful
 update in diagnostic attributes. A tax percentage sensor must not pretend that
 one RTS percentage applies equally to both supply and delivery.
 
 ## Recovery and verification
 
-If official sources cannot be parsed or the location cannot be resolved, do not
-publish a newly calculated complete price with omitted taxes. Preserve dated
-last-known data with clear availability/staleness behavior, and report the
-configuration or source problem.
+If official sources cannot be parsed or the location cannot be resolved, make
+all five sensors unavailable. Retain the last result and its dated attributes
+in memory, report the source/configuration problem, and recover on the next
+successful complete refresh. First setup retries rather than creating
+apparently usable entities from partial data.
 
-Before claiming statewide support, test named municipalities, the explicit RTS
+The local test suite checks named municipalities, the explicit RTS
 outside category, school-district exceptions, combined rates, temporary
 exemptions, future effective dates and ambiguous names against independent
-official examples. Bill fixtures must be synthetic or public, not private
-customer invoices.
+official public rate facts and synthetic arithmetic examples. It also exercises
+all six load zones across every parsed municipal choice and every sales-tax
+choice. This verifies table coverage and arithmetic; users must still identify
+their legal tax jurisdictions correctly. It does not claim every possible
+municipality/school-district pairing exists geographically. Fixtures are public,
+not private customer invoices.

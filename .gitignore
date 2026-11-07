@@ -14,4 +14,8 @@ __pycache__/
 .env.*
 secrets.yaml
 *.pdf
+!tests/fixtures/public/*.pdf
 configuration.yaml
+.coverage
+coverage.xml
+htmlcov/

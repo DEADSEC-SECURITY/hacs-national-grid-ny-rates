@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+				<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" href="/images/icons/icon-180x180.png">
+		<link rel="icon" href="/images/icons/icon-196x196.png">
+		<link rel="stylesheet" href="/src/css/agency.min.css?v=10.8.26">
+        <link rel="stylesheet" href="/src/css/tax.min.css?v=9.30.26">
+		<link rel="stylesheet" href="/src/css/web-components.min.css?v=10.21.26">
+		<noscript><link rel="stylesheet" href="/src/css/noscript.min.css?v=9.25.26"></noscript>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-88NRD2W5YY"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-88NRD2W5YY');
+		</script>
+            <script type="importmap">{
+                "imports": { 
+                    "helper": "/src/js/utils/helper.min.js?v=10.13.26", 
+                    "navigation": "/src/js/utils/navigation.min.js?v=10.13.26", 
+                    "content": "/src/js/utils/content.min.js?v=9.9.26",
+                    "table": "/src/js/utils/table.min.js?v=9.9.26",
+                    "translation": "/src/js/utils/translation.min.js?v=9.17.26",
+                    "components": "/src/js/utils/components.min.js?v=9.17.26",
+                    "print": "/src/js/utils/print.min.js?v=9.3.26",
+                    "analytics": "/src/js/utils/analytics.min.js?v=9.9.26",
+                    "cui-unav-header": "/src/js/webc/unav-header.min.js?v=10.6.26",
+                    "cui-unav-footer": "/src/js/webc/unav-footer.min.js?v=9.9.26",
+                    "cui-alert": "/src/js/webc/alert.min.js?v=10.13.26",
+                    "cui-accordion": "/src/js/webc/accordion.min.js?v=10.2.26",
+                    "cui-translate": "/src/js/webc/translate.min.js?v=9.9.26",
+                    "cui-breadcrumbs": "/src/js/webc/breadcrumbs.min.js?v=9.9.26",
+                    "cui-popup": "/src/js/webc/popup.min.js?v=9.9.26",
+                    "cui-tableofcontents": "/src/js/webc/tableofcontents.min.js?v=9.30.26",
+                    "cui-tooltip": "/src/js/webc/tooltip.min.js?v=9.9.26",
+                    "cui-subscribe": "/src/js/webc/subscribe.min.js?v=10.21.26",
+                    "cui-video": "/src/js/webc/video.min.js?v=10.21.26"
+                }
+            }</script>
+            <link rel="modulepreload" href="/src/js/main.min.js?v=10.21.26">
+            <script src="/src/js/main.min.js?v=10.21.26" type="module"></script>
+		<title>Local Sales and Use Tax Rates on Residential Energy</title>
+		 
+	</head>
+	<body>
+				<div id="agency-container">
+			<div id="tax-container">
+				<div role="navigation" aria-label="skip-navigation"><a href="#tax-content" class="skip-content focus-show">Skip to main content</a></div>
+				<noscript>Your browser will need to support JavaScript to use this site completely. Site functionality and usability will be disrupted. Additionally, videos, data, site search and notifications will be disabled or function poorly.</noscript>
+				<section id="unav-wrap" aria-label="New York State Universal header">
+					<cui-unav-header></cui-unav-header>
+				</section>
+				<div class="tax-wrap">
+					<div id="agency-header" class="gnav-wrap">
+						<header id="gnav" aria-label="Department of Taxation and Finance header">
+							<div class="gnav-heading"><a class="gnav-header" href="/"><span>Department of</span> <span>Taxation and Finance</span></a></div>
+							<div class="gnav-sa-controls">
+								<button type="button" aria-expanded="false" aria-controls="gnav-search-toggle" class="gnav-search-toggle" title="Search Tax"><span class="skip-content">Search box</span></button>
+								<a href="https://ols.tax.ny.gov" aria-label="Log in | Create account for with Tax Department Online Services" title="Log in | Create account" class="gnav-side-menu"><span>Log in | Create account</span></a>
+							</div>
+							<nav id="gnav-menu" aria-label="Primary navigation">
+								<button type="button" aria-expanded="false" aria-controls="gnav-menu-toggle" class="gnav-menu-toggle" title="Primary navigation menu"><span class="gnav-menu-icon"></span><span class="skip-content">Primary navigation menu</span></button>
+								<div id="gnav-menu-toggle" class="gnav-menu-toggle-wrap">
+								<ul class="gnav-menu-main">
+									<li><button aria-label="Online services menu">Online services</button>
+										<ul>
+											<li><a href="/online/">Online Services home</a></li>
+											<li><a href="/pay/">Make a payment</a></li>
+											<li><a href="/pay/pay-bill.htm#quickpay">Quick Pay (businesses and individuals)</a></li>
+											<li><a href="/pay/ind/pay-estimated-tax.htm">Pay estimated tax</a></li>
+											<li><a href="/pit/file/ext.htm">Apply for a personal income tax extension</a></li>
+											<li><a href="/pay/ipa/">Request installment payment agreement</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Individuals menu">Individuals</button>
+										<ul>
+											<li><a href="/pit/">Individuals home</a></li>
+											<li><a href="/pit/credits/income_tax_credits.htm">Income tax credits</a></li>
+											<li><a href="/pay/pay-bill.htm#quickpay">Quick Pay</a></li>
+											<li><a href="/pit/efile/">E-file options</a></li>
+											<li><a href="/pit/file/">Income tax filing resource center</a></li>
+											<li><a href="/pit/file/refund.htm">Check your refund</a></li>
+											<li><a href="/pit/letters/">Respond to a letter</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Businesses menu">Businesses</button>
+										<ul>
+											<li><a href="/bus/">Businesses home</a></li>
+											<li><a href="/bus/st/stidx.htm">Sales and use tax</a></li>
+											<li><a href="/bus/wt/wtidx.htm">Withholding tax</a></li>
+											<li><a href="/bus/ct/ctidx.htm">Corporation tax</a></li>
+											<li><a href="/bus/multi/other.htm">Other taxes</a></li>
+											<li><a href="/enforcement/paid.htm">Penalty and Interest Discount (PAID) program</a></li>
+											<li><a href="/pay/pay-bill.htm#quickpay">Quick Pay</a></li>
+											<li><a href="/bus/efile/elf_swd.htm">Software developers</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Tax professionals menu">Tax professionals</button>
+										<ul>
+											<li><a href="/tp/">Tax professionals home</a></li>
+											<li><a href="/tp/reg/tpreg.htm">Registration and education</a></li>
+											<li><a href="/tp/posting-reqs.htm">Posting requirements</a></li>
+											<li><a href="/tp/reg/opr.htm">Professional responsibility</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Real property menu">Real property</button>
+										<ul>
+											<li><a href="/pit/property/">Real property home</a></li>
+											<li><a href="/star/">STAR</a></li>
+											<li><a href="/star/letters.htm">Respond to a STAR letter</a></li>
+											<li><a href="/pit/property/propertyowners.htm">Property owners</a></li>
+											<li><a href="/pit/property/homeowner-benefit-portal.htm">Homeowner Benefit Portal</a></li>
+											<li><a href="/research/property/">Assessment community</a></li>
+											<li><a href="/bus/transfer/rptidx.htm" aria-label="Real estate transfer tax">Real estate transfer tax</a></li>
+											<li><a href="/pit/mortgage/mtgidx.htm" aria-label="Mortgage recording tax">Mortgage recording tax</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Forms and guidance menu">Forms and guidance</button>
+										<ul>
+											<li><a href="/forms/forms-guidance.htm">Forms and guidance home</a></li>
+											<li><a href="/pit/property/new-homebuyers/filing-rp5217.htm">Form RP-5217-PDF</a></li>
+											<li><a href="/pit/file/tax-tables/">Income tax rates and tables</a></li>
+											<li><a href="/pit/file/school_district/">School district codes</a></li>
+											<li><a href="/forms/income_cur_forms.htm">Current-year income tax forms</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="Tax data menu">Tax data</button>
+										<ul>
+											<li><a href="/data/">Tax data home</a></li>
+											<li><a href="/data/stats/">Statistics and reports</a></li>
+											<li><a href="/research/stats/statistics/open-data.htm">Open data</a></li>
+											<li><a href="/pit/property/munidataportal.htm">Municipal Data Portal</a></li>
+										</ul>
+									</li>
+									<li><button aria-label="About menu">About</button>
+										<ul>
+											<li><a href="/about/">About us</a></li>
+											<li><a href="/careers/">Employment opportunities</a></li>
+											<li><a href="/about/leadership-team.htm">Leadership</a></li>
+										</ul>
+									</li>
+								</ul>
+										
+								</div>
+                           	</nav>
+							<div id="gnav-search-toggle" class="gnav-search-toggle-wrap">
+								<form class="gnav-search" id="form1" name="gs" method="GET" action="/search/" role="search" aria-label="Tax search box">
+									<label for="gnav-search-input" class="skip-content">Search entire Tax site</label>
+									<input id="gnav-search-input" class="gnav-search-input" type="text" name="q" placeholder="Search Tax" maxlength="256" autocomplete="on">
+									<button type="submit" id="gnav-search-submit" class="gnav-search-submit" onsubmit="triggerInput()"><span class="skip-content">Search Tax</span></button>
+								</form>
+							</div>
+                    	</header>
+					</div>
+					<div class="tax-content-wrap">
+	            		<div id="agency-content" class="tax-main-content">            
+		
+		<main id="tax-content" class="pdf-to-html">
+			<header class="logo-heading pitct">
+				<div class="tax-rows flex">
+					<div class="tax-cols">
+						<img src="/images/nys-logo.jpg" alt="Department of Taxation and Finance lockup" class="nys-logo">
+					</div>
+					<div class="tax-cols">
+						<p><strong>Department of Taxation and Finance</strong></p>
+						<h1>Local Sales and Use Tax Rates on Residential Energy <span>Effective June 1, 2026</span></h1>
+						
+					</div>
+					<div class="tax-cols">
+						<h2>Publication 718-R</h2>
+<p>(5/26)</p>
+					</div>
+				</div>
+			</header>
+			<hr>	
+			<p>The Tax Law provides that residential energy sources and services are exempt from the 4% New York State sales and use tax, and the &#8540;% sales and use tax imposed in the Metropolitan Commuter Transportation District (MCTD), if applicable. For more information, see Tax Bulletin <a href="https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/residential_energy.htm"><em>Residential Energy Sources and Services</em> (TB-ST-775)</a>.&#160;</p>
+<p>Localities or school districts not listed in this publication do not impose a local tax on residential energy sources and services.&#160;Jurisdictions that impose tax on such transactions are listed in county order.&#160;</p>
+<p><strong>New </strong></p>
+<p><strong>Chemung County </strong>- Effective <strong>June 1, 2026</strong>, and continuing through <strong>November 30, 2026</strong>, receipts from the retail sale of residential energy sources are exempt from the county's sales and use tax.</p>
+<h3>Part 1 &#8211; Jurisdictions that tax residential gas, propane (100 pounds or more), electricity, and steam</h3>
+<table class="tableborder"><caption class="skip-content">Jurisdictions and rates</caption>
+<tbody>
+<tr>
+<td class="primarycolor whitetext all-cell-borders">Taxing jurisdiction&#160;</td>
+<td class="primarycolor whitetext all-cell-borders">Tax rate %</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Albany School District (<em>Albany County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Cohoes School District (<em>Albany County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Watervliet School District (<em>Albany County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Allegany County</td>
+<td style="text-align: right;" class="all-cell-borders">4&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Cattaraugus County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Olean (city)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Salamanca (city)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Auburn (city) (<em>Cayuga County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Norwich (city) (<em>Chenango County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Hudson School District (<em>Columbia County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Cortland County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Poughkeepsie School District (<em>Dutchess County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Erie County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4&#190;</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Lackawanna School District</td>
+<td style="text-align: right;" class="all-cell-borders">7&#190;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Franklin County</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Gloversville School District (<em>Fulton County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Johnstown School District (<em>Fulton County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Batavia School District (<em>Genesee County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Watertown School District (<em>Jefferson County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Oneida (city) (<em>Madison County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Johnstown School District (<em>Montgomery County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Glen Cove School District (<em>Nassau County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Long Beach School District (<em>Nassau County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Niagara County (outside the following)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Lockport (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Niagara Falls School District</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Utica School District (<em>Oneida County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Middletown School District (<em>Orange County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Newburgh School District (outside city) (<em>Orange County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Newburgh School District (inside city) (<em>Orange County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">6</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Port Jervis (city) (<em>Orange County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Orleans County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Oswego (city) (<em>Oswego County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Rensselaer School District (<em>Rensselaer County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Troy School District (<em>Rensselaer County)</em></td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Schenectady County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Schenectady School District</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Hornell School District (<em>Steuben County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">2&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">St. Lawrence County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Ogdensburg School District (outside city)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Ogdensburg School District (inside city)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Suffolk County</td>
+<td style="text-align: right;" class="all-cell-borders">2&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Tioga County</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Tompkins County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Ithaca (city)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Westchester County (outside the following)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Mount Vernon School District (outside city)</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Mount Vernon School District (inside city)</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">New Rochelle School District</td>
+<td style="text-align: right;" class="all-cell-borders">6</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Peekskill School District</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Rye City School District&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">7</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">White Plains School District</td>
+<td style="text-align: right;" class="all-cell-borders">6</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Yonkers (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">New York City</td>
+<td style="text-align: right;" class="all-cell-borders">4&#189;</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h3>Part 2 &#8211; Jurisdictions that tax residential coal, fuel oil, and wood (for heating)<strong>&#160;</strong></h3>
+<table class="tableborder"><caption class="skip-content">Juriscitions and rates&#160;</caption>
+<tbody>
+<tr>
+<td class="whitetext primarycolor all-cell-borders">Taxing jurisdiction&#160;</td>
+<td class="whitetext primarycolor all-cell-borders">Tax rate %</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Allegany County</td>
+<td style="text-align: right;" class="all-cell-borders">4&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Cattaraugus County (outside the following)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Olean (city)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Salamanca (city)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Auburn (city) (<em>Cayuga County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Norwich (city) (<em>Chenango County</em>)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Cortland County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Erie County</td>
+<td style="text-align: right;" class="all-cell-borders">4&#190;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Franklin County</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Oneida (city) (<em>Madison County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">2</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Niagara County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Orleans County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Oswego (city) (<em>Oswego County</em>)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Schenectady County</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">St. Lawrence County (outside the following)&#160;</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Ogdensburg (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Suffolk County</td>
+<td style="text-align: right;" class="all-cell-borders">2&#189;</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Tioga County</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Tompkins County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Ithaca (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td class="all-cell-borders">Westchester County (outside the following)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Mount Vernon (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">New Rochelle (city)</td>
+<td style="text-align: right;" class="all-cell-borders">3</td>
+</tr>
+<tr>
+<td style="padding-left: 40px;" class="all-cell-borders">Yonkers (city)</td>
+<td style="text-align: right;" class="all-cell-borders">4&#189;</td>
+</tr>
+<tr>
+<td>New York City</td>
+<td style="text-align: right;">4&#189;</td>
+</tr>
+</tbody>
+</table>
+<h3>Need help?</h3>
+<ul>
+<li>Sales Tax Information Center: 518-485-2889</li>
+<li>To order forms and publications: 518-457-5431</li>
+<li>Text Telephone (TTY) or TDD equipment users: Dial 7-1-1 for the New York Relay Service</li>
+</ul>
+<p style="text-align: left;">&#160; &#160;</p>
+			
+			
+				
+				<div class="tax-rows-wrap">
+					<div class="tax-rows">
+						
+								
+									
+									<div class="tax-cols">
+										
+										
+																
+									</div>
+								
+							
+						
+						
+					</div>
+				</div>
+			
+			<div class="tax-modified">Updated: <time datetime="2026-06-08">June 8, 2026</time></div>
+		</main>
+								</div>
+
+					</div>
+					<div id="agency-footer" class="gfooter-wrap">
+						<footer id="tax-footer" class="gfooter" aria-labelledby="gfooter-header">
+							<h2 id="gfooter-header">
+								<span>Department of</span> 
+								<span>Taxation and Finance</span>
+							</h2>
+							<nav class="gfooter-menu" aria-label="Tax and Finance footer menu">
+								<div class="gfooter-menu-col">
+							<h3>Get help</h3>
+							<ul>
+								<li><a href="/help/contact/" aria-label="Contact us page">Contact us</a></li>
+								<li><a href="/help/" aria-label="Help resources">Help resources</a></li>
+								<li><a href="/help/contact/foil.htm" aria-label="Freedom of Information Law (FOIL)">Freedom of Information Law (FOIL)</a></li>
+								<li><a href="/tra/" aria-label="Taxpayer Rights Advocate">Taxpayer Rights Advocate</a></li>
+								<li><a href="/help/contact/fraud/" aria-label="Report fraud">Report fraud</a></li>
+								<li><a href="/about/feedback.htm" aria-label="Feedback">Feedback</a></li>
+							</ul>
+						</div><div class="gfooter-menu-col">
+							<h3>Website</h3>
+							<ul>
+								<li><a href="/help/siteindex.htm" aria-label="Site map">Site map</a></li>
+								<li><a href="/help/tech/privacy-policy.htm" aria-label="Privacy">Privacy</a></li>
+								<li><a href="/help/tech/securesite.htm" aria-label="Security">Security</a></li>
+								<li><a href="/help/tech/disclaimer.htm" aria-label="Disclaimer">Disclaimer</a></li>
+							</ul>
+						</div><div class="gfooter-menu-col">
+							<h3>About us</h3>
+							<ul>
+								<li><a href="/about/" aria-label="About us">About us</a></li>
+								<li><a href="/careers/" aria-label="Employment opportunities">Employment opportunities</a></li>
+								<li><a href="/press/" aria-label="Press">Press</a></li>
+								<li><a href="/help/tech/email-policy.htm" aria-label="Email policy">Email policy</a></li>
+								<li><a href="/help/tech/accessibility.htm" aria-label="Accessibility">Accessibility</a></li>
+								<li><a href="/rulemaker/" aria-label="Regulations and regulatory actions">Regulations and regulatory actions</a></li>
+							</ul>
+						</div><div class="gfooter-menu-col">
+							<h3>Language assistance</h3>
+							<ul class="column-count-2 thin-col-list">
+								<li><a href="/language/" aria-label="Main Language access page">Language access</a></li>
+								<li><a href="/language/espanol/" aria-label="Espa&#241;ol (Spanish)" class="notranslate" hreflang="es">Espa&#241;ol</a></li>
+								<li><a href="/language/chinese/" aria-label="&#32321;&#39636;&#20013;&#25991; (Chinese Traditional)" class="notranslate" hreflang="zh-HK">&#32321;&#39636;&#20013;&#25991;</a></li>
+								<li><a href="/language/russian/" aria-label="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian)" class="notranslate" hreflang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+								<li><a href="/language/yiddish/" aria-label="&#1497;&#1497;&#1491;&#1497;&#1513; (Yiddish)" class="notranslate" hreflang="yi">&#1497;&#1497;&#1491;&#1497;&#1513;</a></li>
+								<li><a href="/language/bengali/" aria-label="&#2476;&#2494;&#2434;&#2482;&#2494; (Bengali)" class="notranslate" hreflang="bn">&#2476;&#2494;&#2434;&#2482;&#2494;</a></li>
+								<li><a href="/language/korean/" aria-label="&#54620;&#44397;&#50612; (Korean)" class="notranslate" hreflang="ko">&#54620;&#44397;&#50612;</a></li>
+								<li><a href="/language/#interpretation" aria-label="Language Access: Free interpretation">Free interpretation</a></li>
+								<li><a href="/language/hcreole/" aria-label="Krey&#242;l ayisyen (Haitian Creole)" class="notranslate" hreflang="ht">Krey&#242;l ayisyen</a></li>
+								<li><a href="/language/italian/" aria-label="Italiano (Italian)" class="notranslate" hreflang="it">Italiano</a></li>
+								<li><a href="/language/arabic/" aria-label="&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577; (Arabic)" class="notranslate" hreflang="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a></li>
+								<li><a href="/language/polish/" aria-label="Polski (Polish)" class="notranslate" hreflang="pl">Polski</a></li>
+								<li><a href="/language/french/" aria-label="Fran&#231;ais (French)" class="notranslate" hreflang="fr">Fran&#231;ais</a></li>
+								<li><a href="/language/urdu/" aria-label="&#1575;&#1585;&#1583;&#1608; (Urdu)" class="notranslate" hreflang="ur">&#1575;&#1585;&#1583;&#1608;</a></li>
+							</ul>
+						</div>
+						
+							</nav>
+							<section class="gfooter-social-menu" aria-labelledby="gfooter-social-menu-header">
+								<h3 id="gfooter-social-menu-header">Connect with us</h3>
+								<ul>
+									<li><a title="Subscribe to NYS Department of Tax and Finance" href="/help/subscribe.htm">
+										<img width="30" height="30" src="/images/icons/subscribe-icon-25.svg" alt="Mail icon">
+										<span class="skip-content">Subscribe to NYS Department of Tax and Finance</span>
+									</a></li>
+                                    <li><a title="NYS Department of Tax and Finance on LinkedIn" href="https://www.linkedin.com/company/new-york-state-department-of-taxation-and-finance/jobs/">
+										<img width="30" height="30" src="/images/icons/linkedin-icon-25.svg" alt="LinkedIn icon">
+										<span class="skip-content">NYS Department of Tax and Finance on LinkedIn</span>
+									</a></li>
+									<li><a title="NYS Department of Tax and Finance on Facebook" href="https://www.facebook.com/NYSTaxDept">
+										<img width="30" height="30" src="/images/icons/fb-icon-25.svg" alt="Facebook icon">
+										<span class="skip-content">NYS Department of Tax and Finance on Facebook</span>
+									</a></li>
+									<li><a title="Department of Tax and Finance on Instagram" href="https://www.instagram.com/nystaxdepartment/">
+										<img width="30" height="30" src="/images/icons/instagram-icon-25.svg" alt="Instagram icon">
+										<span class="skip-content">NYS Department of Tax and Finance on Instagram</span>
+									</a></li>
+									<li><a title="Department of Tax and Finance on X" href="https://x.com/NYSTaxDept">
+										<img width="30" height="30" src="/images/icons/x-icon-25.svg" alt="X icon">
+										<span class="skip-content">NYS Department of Tax and Finance on X</span>
+									</a></li>
+									<li><a title="Department of Tax and Finance on YouTube" href="http://www.youtube.com/user/NYSTaxDepartment">
+										<img width="30" height="30" src="/images/icons/youtube-icon-25.svg" alt="YouTube icon">
+										<span class="skip-content">NYS Department of Tax and Finance on YouTube</span>
+									</a></li>
+								</ul>
+							</section>
+							<section aria-label="New York initiatives" class="gfooter-initiatives">
+								<div class="gfooter-initiatives-items">
+                                	<article aria-label="Register to Vote">
+                                    	<p><a href="https://www.ny.gov/services/register-vote" class="button clear-button" target="_blank" aria-label="Register To Vote">Register To Vote</a></p> 
+                                      	<p>Sign up online or download and mail in your application.</p>
+                                  	</article>
+									<article aria-label="Vaccinate NY">
+										<p><a href="https://www.ny.gov/vaccine" class="button clear-button" target="_blank" aria-label="Vaccinate NY">Vaccinate NY</a></p> 
+										<p>Get the facts about the COVID-19 vaccine.</p>
+									</article>
+									<article aria-label="Donate Life">
+										<p><a href="https://donatelife.ny.gov/register/" class="button clear-button" target="_blank" aria-label="Donate Life">Donate Life</a></p> 
+										<p>Become an organ donor today!</p>
+									</article>
+								</div>
+							</section>
+						</footer>
+					</div>
+				</div>
+				<section id="ufooter" aria-label="New York State Universal footer">
+					<cui-unav-footer></cui-unav-footer>
+				</section>			
+			</div>
+		</div>
+	</body>
+</html>

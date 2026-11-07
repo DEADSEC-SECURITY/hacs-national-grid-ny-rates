@@ -1,0 +1,12 @@
+{
+  "domain": "national_grid_ny_rates",
+  "name": "National Grid NY Rates",
+  "codeowners": ["@DEADSEC-SECURITY"],
+  "config_flow": true,
+  "documentation": "https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/DEADSEC-SECURITY/hacs-national-grid-ny-rates/issues",
+  "requirements": ["beautifulsoup4==4.15.0", "pypdf==6.13.2"],
+  "version": "0.1.0"
+}

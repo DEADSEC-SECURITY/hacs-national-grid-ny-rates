@@ -1,0 +1,35 @@
+{
+  "title": "National Grid NY Rates",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Upstate New York residential electricity",
+        "description": "Choose your National Grid load zone for standard residential SC-1 service with National Grid supplying electricity. Other suppliers, time-of-use, agricultural discounts, solar and account-specific credits are not included. No utility account is needed.",
+        "data": {"zone": "Electricity load zone"}
+      },
+      "location": {
+        "title": "Select your tax jurisdictions",
+        "description": "Select your legal city/village or listed undergrounding area, then your residential energy sales-tax jurisdiction from NY Publication 718-R Part 1. School-district boundaries can differ from city and ZIP boundaries. Choose the no-listed-tax option only if no listed county, city or school district applies. Rates update automatically. For Syracuse: City of Syracuse and no listed tax. This uses no address or account information.",
+        "data": {"municipality": "Municipality", "sales_tax_jurisdiction": "Residential energy sales-tax jurisdiction"}
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not retrieve a complete, effective rate from the official sources. Retry later; an expired exemption or changed filing may need an integration update.",
+      "invalid_zone": "Select a supported load zone.",
+      "invalid_location": "Select both locations from the official lists."
+    },
+    "abort": {
+      "already_configured": "This rate and tax location is already configured.",
+      "reconfigure_successful": "Rate location updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "delivery": {"name": "Delivery"},
+      "supply": {"name": "Supply"},
+      "total_before_tax": {"name": "Total before tax"},
+      "tax": {"name": "Tax"},
+      "total_including_tax": {"name": "Total including tax"}
+    }
+  }
+}
