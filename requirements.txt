@@ -1,3 +1,3 @@
 # Runtime pins must match custom_components/national_grid_ny_rates/manifest.json.
 beautifulsoup4==4.15.0
-pypdf==6.21.4
+pypdf==7.0.0
